@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Links -->
+    <link rel="icon" href="./IMGs/icon.ico">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- ########################## -->
+</head>
+
+<body class="vh-100">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark p-4 d-flex align-items-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="IMGs/logo@2x.png" alt="Logo" class="w-25"> <span
+                    class="fw-bold">Weather App</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End of Navbar -->
+    <!-- ########################################## -->
+    <!-- Home -->
+    
+    <section id="Home" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-between pt-4 pb-5 mt-4" id="search-div">
+                    <input type="search" placeholder="Find Your Location..." class="form-control bg-dark"
+                        id="search-bar">
+                    <button id="find-btn" class="btn btn-primary">Find</button>
+                </div>
+            </div>
+            <div class="container my-4" id="temp-cards">
+                <div class="row">
+
+                    <!-- Today Temperature card -->
+
+                    <div class="col-md-4" id="today">
+                        <div id="today-header" class="d-flex justify-content-between w-100 p-2">
+                            <div id="day"></div>
+                            <div id="date"></div>
+                        </div>
+                        <div id="today-content" class="pb-4 px-3">
+                            <div id="city-name" class="py-2"></div>
+                            <div class="text-center py-3">
+                                <img src="IMGs/logo@2x.png" alt="" id="today-temp-img" class="w-25">
+                                <h3 id="temp" class="display-1 fw-bold"></h3>
+                            </div>
+                            <div id="today-state" class="py-3 text-center"></div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span id="today-rain"></span>
+                                <span id="today-wind-speed"></span>
+                                <span id="today-wind-dir"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End of today temperature card -->
+                    <!-- ########################################## -->
+                    <!-- Tomorrow temperature card -->
+
+                    <div class="col-md-4 text-center" id="tomorrow">
+                        <div id="tomorrow-header" class="w-100 p-2">
+                            <div id="tomorrow-day"></div>
+                        </div>
+                        <div id="tomorrow-content" class="pt-4">
+                            <div class="py-4 align-self-center">
+                                <img src="IMGs/logo@2x.png" alt="" id="tomorrow-temp-img" class="w-25">
+                                <h3 id="tomorrow-temp" class="display-5 fw-bold"></h3>
+                                <h5 id="tomorrow-temp-lower" class="display-6"></h3>
+                            </div>
+                            <div id="tomorrow-state" class="py-3"></div>
+                        </div>
+                    </div>
+
+                    <!-- End of tomorrow temperature card -->
+                    <!-- ########################################## -->
+                    <!-- after tomorrow temperature card -->
+
+                    <div class="col-md-4 text-center" id="after-tomorrow">
+                        <div id="after-tomorrow-header" class="w-100 p-2">
+                            <div id="after-tomorrow-day"></div>
+                        </div>
+                        <div id="after-tomorrow-content" class="pt-4">
+                            <div class="py-4 align-self-center">
+                                <img src="IMGs/logo@2x.png" alt="" id="after-tomorrow-temp-img" class="w-25">
+                                <h3 id="after-tomorrow-temp" class="display-5 fw-bold"></h3>
+                                <h5 id="after-tomorrow-temp-lower" class="display-6"></h3>
+                            </div>
+                            <div id="after-tomorrow-state" class="py-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of after tomorrow temperature card -->
+    <!-- ########################################## -->
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="d-flex justify-content-between pt-4 pb-5 mt-4 col-md-7" id="sub-div">
+                    <input type="email" placeholder="Enter your e-mail to subscribe..." class="form-control bg-dark"
+                        id="sub-bar">
+                    <button id="sub-btn" class="btn btn-primary">Subscribe</button>
+                </div>
+                <div class="col-md-3 d-flex  align-items-center">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div>
+                <p>Copyright 2024 Company name. Designed by Khalaf. All rights reserved</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- scripts -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+    <!-- ############################## -->
+</body>
+
+</html>
