@@ -12,13 +12,13 @@ async function getdata(cityName) {
     console.log(finalresponse);
     finalData = finalresponse
 
-    DisplayData(finalresponse)
+   await DisplayData(finalresponse)
 
 }
 
 // Function to display data in HTML
 
-function DisplayData(data) {
+async function DisplayData(data) {
 
     // today data
 
