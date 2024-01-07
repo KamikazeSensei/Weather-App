@@ -7,7 +7,7 @@ var searchBar = document.getElementById('search-bar')
 // Function to get the data
 
 async function getdata(cityName) {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${cityName}&days=3`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${cityName}&days=3`);
     var finalresponse = await response.json();
     console.log(finalresponse);
     finalData = finalresponse
